@@ -1,0 +1,94 @@
+.hero {
+    background-image: var(--gradient), url(../images/hero-mob.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    flex-grow: 1;
+    max-width: 1600px;
+    margin: 0 auto; 
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image:var(--gradient), url(../../images/hero-mob2x.jpg);
+    }
+
+    @include tablet {
+        background-image:var(--gradient), url(../images/hero-tab.png);
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image:var(--gradient), url(../../images/hero-tab2x.jpg);
+        }
+    }
+
+    @include desktop {
+        background-image: var(--gradient), url(../../images/background.jpg);
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: var(--gradient), url(../../images/hero-desk2x.jpg);
+        }
+
+    }
+}
+
+
+
+
+
+.hero {
+    background-color: #2F303A;
+    padding-top: 118px;
+    padding-bottom: 118px;
+    text-align: center;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+    
+}
+
+.hero__title {
+    margin: 0 auto;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 42px;
+    letter-spacing: 0.06em;
+    color: var(--white-color);
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    max-width: 360px;
+    text-align: center;
+    
+
+    @include desktop {
+        font-size: 44px;
+        line-height: 1.36;
+        max-width: 696px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+}
+
+.hero__btn {
+    font-family: inherit;
+    background: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color: var(--white-color);
+    padding: 10px 24px;
+
+    border: none;
+    transition: background-color 250ms var(--cubic);
+
+    &:hover {
+        background-color: #188CE8;
+    }
+}
+
