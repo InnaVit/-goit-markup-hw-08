@@ -765,7 +765,6 @@ body {
   .container-footer {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
   }
 }
 
@@ -1111,7 +1110,6 @@ body {
   line-height: 1.2222222222;
   letter-spacing: 0.02em;
   color: var(--accent-color);
-  position: relative;
 }
 
 .mob-soc-item:not(:last-child) {
@@ -1122,7 +1120,6 @@ body {
 .mob-soc-list {
   display: flex;
   gap: 10px;
-  justify-content: center;
 }
 
 .is-hidden {
