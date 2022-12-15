@@ -765,6 +765,7 @@ body {
   .container-footer {
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
   }
 }
 
@@ -944,6 +945,8 @@ body {
 @media screen and (min-width: 1200px) {
   .footer-tab-wrap {
     display: flex;
+    align-items: baseline;
+    margin-bottom: 0;
   }
 }
 

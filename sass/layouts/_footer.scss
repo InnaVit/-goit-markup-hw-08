@@ -17,7 +17,7 @@
     @include desktop {
         display: flex;
         justify-content: space-between;
-        
+        align-items: baseline;
     }
 
 }
@@ -211,6 +211,8 @@
 
     @include desktop {
         display: flex;
+        align-items: baseline;
+        margin-bottom: 0;
        
     }
 }
