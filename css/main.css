@@ -244,7 +244,7 @@ body {
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: var(--gradient), url(../../images/hero-mob2x.jpg);
+    background-image: var(--gradient), url(../images/hero-mob2x.jpg);
   }
 }
 @media screen and (min-width: 768px) {
@@ -254,17 +254,17 @@ body {
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: var(--gradient), url(../../images/hero-tab2x.jpg);
+    background-image: var(--gradient), url(../images/hero-tab2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    background-image: var(--gradient), url(../../images/background.jpg);
+    background-image: var(--gradient), url(../images/background.jpg);
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: var(--gradient), url(../../images/hero-desk2x.jpg);
+    background-image: var(--gradient), url(../images/hero-desk2x.jpg);
   }
 }
 
