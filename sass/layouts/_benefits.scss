@@ -48,8 +48,13 @@
     text-transform: uppercase;
     color: var(--text-title-color);
     margin-bottom: 10px;
+    text-align: center;
     /* width: calc((100% - 90px) / 4); 
     width: 270px; */
+
+    @include tablet {
+        text-align: start;
+    }
 }
 
 .benefits__text {

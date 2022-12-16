@@ -1,8 +1,20 @@
 .filter {
-    margin-bottom: 56px;
+    margin-bottom: 40px;
     display: flex;
     gap: 8px;
-    justify-content: center;
+    flex-wrap: wrap;
+    
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 14px;
+        justify-content: center;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 34px;
+        
+    
+    }
 }
 
 
@@ -28,6 +40,7 @@
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     
 }
+
 }
 
 
@@ -53,6 +66,7 @@
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
+
 }
 
 .menu-list-item {
@@ -61,6 +75,20 @@
     &:hover, &:focus {
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
     }
+
+    width: 100%;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        gap: 30px;
+        width: calc((100% - 30px) / 2);
+        max-width: 350px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 60px) / 3);
+        max-width: 370px;
+    }
+
 }
 
 .menu-list-box {
@@ -68,6 +96,7 @@
     border-right: 1px solid #EEEEEE;
     border-bottom: 1px solid  #EEEEEE;
     padding: 20px 24px;
+
     
 }
 
@@ -95,7 +124,7 @@
     background: rgba(33, 150, 243, 0.9);
     padding: 63px 24px;
     top: 0;
-    transform: translateY(101%);
+    transform: translateY(135%);
     overflow: hidden;
     transition: transform 250ms var(--cubic);
 }

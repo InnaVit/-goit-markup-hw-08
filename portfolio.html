@@ -36,7 +36,7 @@
           </ul>
         </nav>
 
-        <ul class="header__list">
+        <ul class="header__list contact-list-tab">
           <li>
             <a class="header__contact" href="mailto:info@devstudio.com">
               <svg class="header__icon" width="16" height="12">
@@ -52,8 +52,62 @@
               +38 096 111 11 11</a>
           </li>
         </ul>
+    <!------- mobile menu------>
+
+    <button type="button" class="menu-open" data-menu-open>
+      <svg class="menu-icon" width="40" height="40">
+        <use href="./images/icons.svg#icon-menu"></use>
+      </svg>
+    </button>
+  </div>
+  
+    <div class="mob-menu is-hidden" data-menu>
+      <div class="container">
+        <button class="mob-btn-close"  type="button" data-menu-close>
+          <svg class="menu-icon-close" width="40" height="40">
+            <use href="./images/icons.svg#icon-close-mob-menu"></use>
+          </svg>
+        </button>
+        <ul class="mob-list">
+          <li><a class="mob-item" href="">Студія</a></li>
+          <li><a class="mob-item" href="./portfolio.html">Портфоліо</a></li>
+          <li><a class="mob-item" href="">Контакти</a></li>
+        </ul>
+
+        <ul class="mob-contacts-list">
+          <li>
+            <a class="tel-contacts" href="tel:+380961111111">
+               +38 096 111 11 11</a>
+          </li>
+          <li>
+            <a class="email-contacts" href="mailto:info@devstudio.com">
+              info@devstudio.com</a>
+          </li>
+        </ul>
+
+        <ul class="mob-soc-list">
+          <li class="mob-soc-item">
+            <a class="mob-soc-link" href="" target="_blank">
+              Instagram
+            </a>
+          </li>
+          <li class="mob-soc-item">
+            <a class="mob-soc-link " href="" target="_blank">
+              Twitter</a>
+          </li>
+          <li class="mob-soc-item">
+            <a class="mob-soc-link" href="" target="_blank">
+              Facebook</a>
+          </li>
+          <li class="mob-soc-item">
+            <a class="mob-soc-link" href="" target="_blank">
+              LinkedIn</a>
+          </li>
+        </ul>
       </div>
-    </header>
+    </div>
+  
+</header>
 
     <main>
       <section class="section">
@@ -241,7 +295,8 @@
 
     <footer class="footer">
       <div class="container container-footer">
-        <div class="">
+        <div class="footer-tab-wrap">
+         <div class="logo-wrap">
           <a href="" class="header__logo logo-foot"
             ><span class="logo">Web</span>Studio</a
           >
@@ -294,6 +349,7 @@
             </li>
           </ul>
         </div>
+      </div>
 
         <form class="footer-form">
           <p class="footer-text">Підпишіться на розсилку</p>

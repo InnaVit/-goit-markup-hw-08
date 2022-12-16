@@ -17,8 +17,8 @@
 }
 
 .modal {
-    width: 528px;
-    min-height: 581px;
+    width: 450px;
+    min-height: 609px;
     background-color: var(--white-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -27,8 +27,12 @@
     left: 50%;
     transform: translate(-50%, -50%);
     transition: transform 400ms var(--cubic);
-
     padding: 40px;
+
+    @include desktop {
+        width: 528px;
+        min-height: 581px;
+    }
 }
 
 .modal-form {
@@ -99,6 +103,8 @@
     left: 12px;
     top: 50%;
     transform: translateY(-50%);
+
+
 }
 
 .input-wraper {
@@ -126,13 +132,19 @@
 
 .conditions-text {
     display: block;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 12px;
+    line-height: 14px;
     letter-spacing: 0.03em;
     color: var(--text-color);
     margin-bottom: 30px;
     display: flex;
     align-items: center;
+
+    @include desktop {
+        font-size: 14px;
+        line-height: 24px;
+      
+    }
 
 }
 
@@ -140,10 +152,10 @@
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
-    text-decoration-line: underline;
+ 
     color: var(--accent-color);
     position: relative;
-    text-decoration: none;
+   
     margin-left: 5px;
 }
 
@@ -219,7 +231,7 @@ justify-content: center;
     fill: #000;
     width: 30px;
     height: 30px;
-     
+    background-color: transparent;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     position: absolute;
